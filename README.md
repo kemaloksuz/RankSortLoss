@@ -2,9 +2,9 @@
 
 The official implementation of Rank & Sort Loss. Our implementation is based on [mmdetection](https://github.com/open-mmlab/mmdetection).
 
-> [**Rank & Sort Loss for Object Detection and Instance Segmentation**](link),            
+> [**Rank & Sort Loss for Object Detection and Instance Segmentation**](https://arxiv.org/abs/2107.11669),            
 > [Kemal Oksuz](https://kemaloksuz.github.io/), Baris Can Cam, [Emre Akbas](http://user.ceng.metu.edu.tr/~emre/), [Sinan Kalkan](http://www.kovan.ceng.metu.edu.tr/~sinan/),
-> *ICCV 2021 (Oral Presentation). ([arXiv pre-print](link))*
+> *ICCV 2021 (Oral Presentation). ([arXiv pre-print](https://arxiv.org/abs/2107.11669))*
 
 
 ## Summary
@@ -21,7 +21,7 @@ The official implementation of Rank & Sort Loss. Our implementation is based on 
   <img src="assets/Architecture.png" width="600">
 </p>
 
-**Benefits of RS Loss on Improving Performance.** Using RS Loss, we train seven diverse visual detectors only by tuning the learning rate, and show that it consistently outperforms baselines: e.g. our RS Loss improves (i)  Faster R-CNN by \~3 box AP and aLRP Loss (ranking-based baseline) by \~2 box AP on COCO dataset, (ii) Mask R-CNN with repeat factor sampling by 3.5 mask AP (\~7 AP for rare classes) on LVIS dataset; and also outperforms all counterparts.
+**Benefits of RS Loss on Improving Performance.** Using RS Loss, we train seven diverse visual detectors only by tuning the learning rate, and show that it consistently outperforms baselines: e.g. our RS Loss improves (i)  Faster R-CNN by \~3 box AP and aLRP Loss (ranking-based baseline) by \~2 box AP on COCO dataset, (ii) Mask R-CNN with repeat factor sampling by 3.5 mask AP (\~7 AP for rare classes) on LVIS dataset.
 
 ## How to Cite
 
