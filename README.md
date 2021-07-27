@@ -25,7 +25,7 @@ The official implementation of Rank & Sort Loss. Our implementation is based on 
 
 ## How to Cite
 
-Please cite the paper if you benefit from our paper or repository:
+Please cite the paper if you benefit from our paper or the repository:
 ```
 @inproceedings{RSLoss,
        title = {Rank & Sort Loss for Object Detection and Instance Segmentation},
@@ -43,9 +43,9 @@ Please cite the paper if you benefit from our paper or repository:
 ## Trained Models
 Here, we report minival results in terms of AP and oLRP.
 
-## Multi-stage Object Detection 
+### Multi-stage Object Detection 
 
-### RS-R-CNN
+#### RS-R-CNN
 
 |    Backbone     |  Epoch |  Carafe  | MS train | box AP | box oLRP  |  Log  | Config | Model |
 | :-------------: | :-----: | :-----: | :------------: | :------------: | :------------: | :-------: | :-------: | :-------: |
@@ -54,20 +54,20 @@ Here, we report minival results in terms of AP and oLRP.
 |    ResNet-101-DCN |  36 |    |   [480,960]  |   47.6 |   61.1  |[log](https://drive.google.com/file/d/16JG0RN9sMCZSKhTtNnKGrdQu_5mMUrcn/view?usp=sharing)| [config](configs/ranksort_loss/ranksort_faster_rcnn_r101_fpn_mstrain_dcn_3x_coco.py) | [model](https://drive.google.com/file/d/1UtY-vVy-1sTZxga109zz-0WeLrX0l9Aq/view?usp=sharing) |
 |    ResNet-101-DCN | 36 |  +  |   [480,960]  |  47.7  |   60.9  |[log](https://drive.google.com/file/d/1aYHOVK-BwcN2sHfyW3P46ieHU1wZoX5G/view?usp=sharing)| [config](configs/ranksort_loss/ranksort_faster_rcnn+_r101_fpn_mstrain_dcn_3x_coco.py) | [model](https://drive.google.com/file/d/1tzXxzED6Vir5Lx8tZeduJhCUgQFsW_ak/view?usp=sharing) |
 
-### RS-Cascade R-CNN
+#### RS-Cascade R-CNN
 |    Backbone     |  Epoch  | box AP |  box oLRP |  Log  | Config | Model |
 | :-------------: | :-----: | :------------: | :------------: | :-------: | :-------: |:-------: |
 |    ResNet-50    | 12 |   41.3  | 66.6 | Coming soon |  |  |
 
-## One-stage Object Detection
+### One-stage Object Detection
 |    Method     |  Backbone |  Epoch  | box AP | box oLRP  |  Log  | Config | Model |
 | :-------------: | :-----: | :-----: | :------------: | :------------: | :-------: | :-------: | :-------: |
 | RS-ATSS |    ResNet-50 | 12 |   39.9  |   67.9  |[log](https://drive.google.com/file/d/1Ya2V728qtS5WTl7V-hS052DPETXh8c6b/view?usp=sharing)| [config](configs/ranksort_loss/ranksort_atss_r50_fpn_1x_coco.py) | [model](https://drive.google.com/file/d/1yQ0gVXSIK2SOvwyYjv9vT5DqFcExZ5Ty/view?usp=sharing) |
 | RS-PAA |    ResNet-50 | 12 |   41.0  |   67.3  |[log](https://drive.google.com/file/d/1nEYfrgFPX24AXy13UB0vddASeu3tFTG7/view?usp=sharing)| [config](configs/ranksort_loss/ranksort_paa_r50_fpn_1x_coco.py) | [model](https://drive.google.com/file/d/1oGILFHoaFEOkh0ba-9bIHkw3yrzXcQ5I/view?usp=sharing) |
 
-## Multi-stage Instance Segmentation 
+### Multi-stage Instance Segmentation 
 
-### RS-Mask R-CNN on COCO Dataset
+#### RS-Mask R-CNN on COCO Dataset
 
 |    Backbone     |  Epoch  |  Carafe | MS train | mask AP | box AP | mask oLRP | box oLRP |  Log  | Config | Model |
 | :-------------: | :-----: | :-----: | :------------: | :------------: | :------------: | :------------: | :------------: | :-------: | :-------: |:-------: |
@@ -78,35 +78,37 @@ Here, we report minival results in terms of AP and oLRP.
 |    ResNet-101-DCN | 36 |  +  |   [480,960]  |   43.6  | 48.8 |   64.0  | 60.2 |[log](https://drive.google.com/file/d/1CgZw3QRFROZZztO_UotwBOn_k0WavsIe/view?usp=sharing)| [config](configs/ranksort_loss/ranksort_mask_rcnn+_r101_dcn_fpn_mstrain_3x_coco.py) | [model](https://drive.google.com/file/d/14cE5xw-xgxsuH3P98o2IhFh0ZBfOgIM_/view?usp=sharing) |
 |    ResNeXt-101-DCN | 36 |  +  |   [480,960]  |   44.4  | 49.9 |   63.1  | 59.1 | Coming Soon | [config](configs/ranksort_loss/ranksort_mask_rcnn+_x101_dcn_fpn_mstrain_3x_coco.py) | [model](https://drive.google.com/file/d/12p-nev9sMvlKmogje2Lsz5qdW1mGTYBA/view?usp=sharing) |
 
-### RS-Mask R-CNN on LVIS Dataset
+#### RS-Mask R-CNN on LVIS Dataset
 |    Backbone     |  Epoch  | MS train | mask AP | box AP | mask oLRP | box oLRP |  Log  | Config | Model |
 | :-------------: | :-----: | :------------: | :------------: | :------------: | :------------: | :------------: | :-------: | :-------: |:-------: |
 |    ResNet-50  | 12 |  [640,800]  |   25.2  | 25.9 |   Coming Soon  | Coming Soon | Coming Soon | Coming soon | Coming soon |
 
 
-## One-stage Instance Segmentation
+### One-stage Instance Segmentation
 
-### RS-YOLACT
+#### RS-YOLACT
 
 |    Backbone     |  Epoch  | mask AP | box AP | mask oLRP | box oLRP |  Log  | Config | Model |
 | :-------------: | :-----: | :------------: | :------------: | :------------: | :------------: | :-------: | :-------: |:-------: |
 |    ResNet-50    | 55 |   29.9  | 33.8 |   74.7  | 71.8 |[log](https://drive.google.com/file/d/1Cc55XcKMo2gIuSyy2VWqU0aNP96G5N7s/view?usp=sharing)| [config](configs/ranksort_loss/ranksort_yolact_r50_55e_coco.py) | [model](https://drive.google.com/file/d/1JVmHCpo97BqypXdyFs7gvGFNDAOFEp19/view?usp=sharing) |
 
-### RS-SOLOv2
+#### RS-SOLOv2
 
 | Backbone    |  Epoch  | mask AP | mask oLRP  |  Log  | Config | Model |
 | :---------: | :-----: | :------------: | :------------: | :-------: | :-------: | :-------: |
 |   ResNet-34 | 36 |   32.6  |   72.7  | Coming soon |Coming soon | Coming soon|
 |  ResNet-101 | 36 |   39.7  |   66.9  | Coming soon |Coming soon|Coming soon|
 
-## Training Code
+## Running the Code
+
+### Training Code
 The configuration files of all models listed above can be found in the `configs/ranksort_loss` folder. You can follow [get_started.md](docs/get_started.md) for training code. As an example, to train Faster R-CNN with our RS Loss on 4 GPUs as we did, use the following command:
 
 ```
 ./tools/dist_train.sh configs/ranksort_loss/ranksort_faster_rcnn_r50_fpn_1x_coco.py 4
 ```
 
-## Test Code
+### Test Code
 The configuration files of all models listed above can be found in the `configs/ranksort_loss` folder. You can follow [get_started.md](docs/getting_started.md) for test code. As an example, first download a trained model using the links provided in the tables below or you train a model, then run the following command to test an object detection model on multiple GPUs:
 
 ```
