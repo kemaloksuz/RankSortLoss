@@ -81,7 +81,7 @@ Here, we report minival results in terms of AP and oLRP.
 #### RS-Mask R-CNN on LVIS Dataset
 |    Backbone     |  Epoch  | MS train | mask AP | box AP | mask oLRP | box oLRP |  Log  | Config | Model |
 | :-------------: | :-----: | :------------: | :------------: | :------------: | :------------: | :------------: | :-------: | :-------: |:-------: |
-|    ResNet-50  | 12 |  [640,800]  |   25.2  | 25.9 |   Coming Soon  | Coming Soon | Coming Soon | Coming soon | Coming soon |
+|    ResNet-50  | 12 |  [640,800]  |   25.2  | 25.9 |   Coming Soon  | Coming Soon | [log](https://drive.google.com/file/d/1f8uYJaMvVnE5ZbW34gFYi6LG5lx6Zp8G/view?usp=sharing)| [config](configs/ranksort_loss/ranksort_mask_rcnn_r50_fpn_1x_lvis_v1.py) | [model](https://drive.google.com/file/d/1eTe-xaH_m94aMWdAvczdNswGn1vwXELx/view?usp=sharing) |
 
 
 ### One-stage Instance Segmentation

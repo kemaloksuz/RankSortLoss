@@ -31,11 +31,9 @@ train_cfg = dict(
     rpn=dict(sampler=dict(type='PseudoSampler')),
     rcnn=dict(sampler=dict(num=1e10)))
 
-test_cfg = dict(
-    rcnn=dict(
-        score_thr=0.0001,
-        # LVIS allows up to 300
-        max_per_img=300))
+# We use score threshold as 0.60 different from 1e-4
+# as the default setting for efficiency.
+test_cfg = dict(rcnn=dict(score_thr=0.60))
 
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
