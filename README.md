@@ -94,10 +94,12 @@ Here, we report minival results in terms of AP and oLRP.
 
 #### RS-SOLOv2
 
-| Backbone    |  Epoch  | mask AP | mask oLRP  |  Log  | Config | Model |
-| :---------: | :-----: | :------------: | :------------: | :-------: | :-------: | :-------: |
-|   ResNet-34 | 36 |   32.6  |   72.7  | Coming soon |Coming soon | Coming soon|
-|  ResNet-101 | 36 |   39.7  |   66.9  | Coming soon |Coming soon|Coming soon|
+The implementation of Rank & Sort Loss on Solov2 is released in a seperate repository due to mmdetection version difference. You can check out our SOLOv2 implementation [in this repository](https://github.com/kemaloksuz/RankSortLoss-Solov2). Any pull request to incorporate Solov2 to this repository is highly appreciated.
+
+| Backbone    |  Epoch  | mask AP | mask oLRP  |
+| :---------: | :-----: | :------------: | :------------: | 
+|   ResNet-34 | 36 |   32.6  |   72.7  | 
+|  ResNet-101 | 36 |   39.7  |   66.9  | 
 
 ## Running the Code
 
