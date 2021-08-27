@@ -57,7 +57,7 @@ Here, we report minival results in terms of AP and oLRP.
 #### RS-Cascade R-CNN
 |    Backbone     |  Epoch  | box AP |  box oLRP |  Log  | Config | Model |
 | :-------------: | :-----: | :------------: | :------------: | :-------: | :-------: |:-------: |
-|    ResNet-50    | 12 |   41.3  | 66.6 | Coming soon |  |  |
+|    ResNet-50    | 12 |   41.3  | 66.6 |[log](https://drive.google.com/file/d/1rGcbDsn1nd4e4BnrRfMT9Vj0uZCLnEYf/view?usp=sharing) | [config](configs/ranksort_loss/ranksort_cascade_rcnn_r50_fpn_1x_coco.py) | Coming soon  |
 
 ### One-stage Object Detection
 |    Method     |  Backbone |  Epoch  | box AP | box oLRP  |  Log  | Config | Model |
